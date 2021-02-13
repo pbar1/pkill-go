@@ -1,5 +1,8 @@
 # pkill-go
 
+[![GoDoc](https://godoc.org/github.com/pbar1/pkill-go?status.svg)](https://godoc.org/github.com/pbar1/pkill-go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/pbar1/pkill-go)](https://goreportcard.com/report/github.com/pbar1/pkill-go)
+
 Like `pkill` and `pgrep`, in pure Go without using `exec.Cmd`.
 
 ```sh
