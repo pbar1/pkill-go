@@ -6,14 +6,14 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"syscall"
 
 	"github.com/pbar1/pkill-go"
 )
 
 func main() {
-	// terminate ourself
-	pids, err := pkill.Pkill("^go$", syscall.SIGTERM)
+	pids, err := pkill.Pkill(os.Args[1], syscall.SIGKILL)
 	if err != nil {
 		fmt.Println(err)
 	}

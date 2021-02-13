@@ -6,12 +6,13 @@ package main
 
 import (
 	"fmt"
+	"os"
 
 	"github.com/pbar1/pkill-go"
 )
 
 func main() {
-	pids, err := pkill.Pgrep("^go$")
+	pids, err := pkill.Pgrep(os.Args[1])
 	if err != nil {
 		fmt.Println(err)
 	}
